@@ -1,0 +1,24 @@
+package org.example;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class WorkingWithLists {
+    public static void main(String[] args) {
+
+        List<String> colors = new ArrayList<>();
+        colors.add("blue");
+        colors.add("purple");
+        colors.add("yellow");
+
+        System.out.println(colors.contains("yellow"));
+
+        for(String color : colors){
+            System.out.println(color);
+        }
+
+        colors.forEach(System.out::println);
+
+
+    }
+}
